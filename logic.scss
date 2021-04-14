@@ -1,0 +1,27 @@
+$primary-color: #007BB3;
+$color-white: #fff;
+
+.client-header {
+  display: flex;
+  height: 90px;
+  box-shadow:-1.23px -1.58px 7px #757575;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-logo {
+  background-color: $primary-color;
+  display: inline-flex;
+  padding:0 60px 0 15px;
+  align-items: center;
+  height: 100%;
+  position: relative;
+    &-diagonal {
+    background-color: $color-white;
+    height: 100%;
+    position: absolute;
+    right: -40px;
+    transform: skewX(-41deg);
+    width: 80px;
+  }
+}
