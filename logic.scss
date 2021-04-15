@@ -1,12 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 $primary-color: #007BB3;
 $color-white: #fff;
+$header-height: 90px;
 
 .client-header {
   display: flex;
-  height: 90px;
+  height: $header-height;
   box-shadow:-1.23px -1.58px 7px #757575;
   align-items: center;
   justify-content: space-between;
+  background-color: $color-white;
 }
 
 .client-logo {
@@ -24,4 +28,31 @@ $color-white: #fff;
     transform: skewX(-41deg);
     width: 80px;
   }
+}
+.login-bg-image {
+  top : $header-height;
+}
+
+.client-login-message {
+  color: $color-white;
+  text-shadow: 0px 3px 6px #19191936;
+  &-welcome {
+    font-size: 18px;
+    line-height: 21x;
+    margin-bottom: 2px;
+  }
+  &-top {
+    font-size: 34px;
+    line-height: 36x;
+    margin-bottom: 2px;
+  }
+  h2 {
+        font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
 }
