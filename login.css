@@ -1,9 +1,11 @@
-.client-header {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+ .client-header {
 	 display: flex;
 	 height: 90px;
 	 box-shadow: -1.23px -1.58px 7px #757575;
 	 align-items: center;
 	 justify-content: space-between;
+	 background-color: #fff;
 }
  .client-logo {
 	 background-color: #007bb3;
@@ -20,5 +22,30 @@
 	 right: -40px;
 	 transform: skewX(-41deg);
 	 width: 80px;
+}
+ .login-bg-image {
+	 top: 90px;
+}
+ .client-login-message {
+	 color: #fff;
+	 text-shadow: 0px 3px 6px #191919 36;
+}
+ .client-login-message-welcome {
+	 font-size: 18px;
+	 line-height: 21x;
+	 margin-bottom: 2px;
+}
+ .client-login-message-top {
+	 font-size: 34px;
+	 line-height: 36x;
+	 margin-bottom: 2px;
+}
+ .client-login-message h2 {
+	 font-size: 20px;
+	 line-height: 24px;
+}
+ .container {
+	 display: flex;
+	 justify-content: space-between;
 }
  
