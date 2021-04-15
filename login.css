@@ -1,9 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;
-400;
-500;
-600;
-700&display=swap");
- .client-header {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+.client-header {
 	 display: flex;
 	 height: 90px;
 	 box-shadow: -1.23px -1.58px 7px #757575;
