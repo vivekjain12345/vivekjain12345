@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
-$primary-color: #007BB3;
+$primary-color: #007bb3;
 $color-white: #fff;
 $header-height: 90px;
+$color-text-black: #000;
+$font-family-base: Helvetica, "Helvetica Neue", -apple-system,
+  BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-montserrat: "Montserrat", $font-family-base;
 
 .client-header {
   display: flex;
   height: $header-height;
-  box-shadow:-1.23px -1.58px 7px #757575;
+  box-shadow: -1.23px -1.58px 7px #757575;
   align-items: center;
   justify-content: space-between;
   background-color: $color-white;
@@ -16,11 +21,11 @@ $header-height: 90px;
 .client-logo {
   background-color: $primary-color;
   display: inline-flex;
-  padding:0 60px 0 15px;
+  padding: 0 60px 0 15px;
   align-items: center;
   height: 100%;
   position: relative;
-    &-diagonal {
+  &-diagonal {
     background-color: $color-white;
     height: 100%;
     position: absolute;
@@ -29,30 +34,85 @@ $header-height: 90px;
     width: 80px;
   }
 }
-.login-bg-image {
-  top : $header-height;
-}
-
 .client-login-message {
   color: $color-white;
   text-shadow: 0px 3px 6px #19191936;
+  margin-top: 300px;
+  max-width: 313px;
   &-welcome {
     font-size: 18px;
     line-height: 21x;
     margin-bottom: 2px;
+    font-family: $font-family-base;
   }
   &-top {
     font-size: 34px;
     line-height: 36x;
     margin-bottom: 2px;
+    font-weight: 600;
+    font-family: $font-family-montserrat;
   }
   h2 {
-        font-size: 20px;
+    font-size: 20px;
     line-height: 24px;
+    font-weight: 400;
+    font-family: $font-family-montserrat;
   }
 }
 
 .container {
   display: flex;
   justify-content: space-between;
+}
+
+.client-footer {
+  background-color: $color-text-black;
+  padding: 28px 15px;
+  display: flex;
+  justify-content: space-between;
+  color: $color-white;
+  font-family: $font-family-montserrat;
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  width: 100vw;
+  &-links {
+    display: flex;
+  }
+  &-height {
+    height: 124px;
+    width: 100%;
+  }
+  .copyright {
+    font-size: 14px;
+    font-weight: 400;
+    color: inherit;
+    margin-top: 30px;
+  }
+  a {
+    font-size: 14px;
+    font-weight: 600;
+    color: inherit;
+    margin-right: 20px;
+    white-space: nowrap;
+  }
+  .download-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a {
+      margin: 0;
+    }
+  }
+}
+
+body {
+  .login-bg-image {
+    top: $header-height;
+    min-height: calc(100vh - 90px - 124px);
+    position: static;
+  }
+  #okta-sign-in.auth-container.main-container {
+    margin: 60px 0;
+  }
 }
