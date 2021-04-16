@@ -78,6 +78,9 @@ $font-family-montserrat: "Montserrat", $font-family-base;
   width: 100%;
   &-links {
     display: flex;
+    > div {
+      line-height: 1;
+    }
   }
   &-height {
     height: 124px;
