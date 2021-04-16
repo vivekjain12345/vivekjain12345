@@ -67,6 +67,9 @@
  .client-footer-links {
 	 display: flex;
 }
+ .client-footer-links > div {
+	 line-height: 1;
+}
  .client-footer-height {
 	 height: 124px;
 	 width: 100%;
