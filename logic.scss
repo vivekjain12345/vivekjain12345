@@ -38,16 +38,16 @@ $font-family-montserrat: "Montserrat", $font-family-base;
   color: $color-white;
   text-shadow: 0px 3px 6px #19191936;
   margin-top: 300px;
-  max-width: 313px;
+  max-width: 325px;
   &-welcome {
     font-size: 18px;
-    line-height: 21x;
+    line-height: 21px;
     margin-bottom: 2px;
     font-family: $font-family-base;
   }
   &-top {
     font-size: 34px;
-    line-height: 36x;
+    line-height: 36px;
     margin-bottom: 2px;
     font-weight: 600;
     font-family: $font-family-montserrat;
@@ -75,7 +75,7 @@ $font-family-montserrat: "Montserrat", $font-family-base;
   position: absolute;
   bottom: 0;
   font-size: 16px;
-  width: 100vw;
+  width: 100%;
   &-links {
     display: flex;
   }
@@ -96,12 +96,15 @@ $font-family-montserrat: "Montserrat", $font-family-base;
     margin-right: 20px;
     white-space: nowrap;
   }
-  .download-links {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    a {
-      margin: 0;
+  .download {
+    font-size: 14px;
+    &-links {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      a {
+        margin: 0;
+      }
     }
   }
 }
