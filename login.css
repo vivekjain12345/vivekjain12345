@@ -123,10 +123,25 @@
  body #okta-sign-in.auth-container .button-primary:hover {
 	 background-color: #006098;
 }
+ body #okta-sign-in.auth-container .link {
+	 color: #007bb3;
+	 font-size: 16px;
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 font-weight: 400;
+}
+ body #okta-sign-in.auth-container .link:link, body #okta-sign-in.auth-container .link:visited {
+	 color: #007bb3;
+}
+ body #okta-sign-in.auth-container .link:hover, body #okta-sign-in.auth-container .link:active {
+	 color: #006098;
+}
  body #okta-sign-in .o-form label {
 	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	 color: #737375;
 	 font-weight: 400;
+}
+ body #okta-sign-in .o-form .custom-checkbox label {
+	 font-size: 14px;
 }
  body #okta-sign-in .o-form .o-form-input .o-form-control {
 	 height: 45px;
