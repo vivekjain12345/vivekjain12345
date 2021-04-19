@@ -148,13 +148,13 @@ body {
         }
       }
       .link {
-        color: $color-primary;
+        color: $primary-color;
         font-size: 16px;
         font-family: $font-family-montserrat;
         font-weight: 400;
         &:link,
         &:visited {
-          color: $color-primary;
+          color: $primary-color;
         }
         &:hover,
         &:active {
