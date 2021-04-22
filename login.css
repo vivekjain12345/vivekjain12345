@@ -97,7 +97,7 @@
 	 flex-wrap: wrap;
 }
  .client-footer .download-links a {
-	 margin: 0;
+	 margin: 0 0 0 8px;
 }
  body .login-bg-image {
 	 top: 90px;
