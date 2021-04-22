@@ -108,6 +108,7 @@ $font-family-montserrat: "Montserrat", $font-family-base;
   }
   .download {
     font-size: 14px;
+    text-align: right;
     &-links {
       display: flex;
       justify-content: space-between;
