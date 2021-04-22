@@ -89,6 +89,7 @@
 }
  .client-footer .download {
 	 font-size: 14px;
+	 text-align: right;
 }
  .client-footer .download-links {
 	 display: flex;
