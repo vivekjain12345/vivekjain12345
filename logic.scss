@@ -131,6 +131,12 @@ body {
       &.main-container {
         margin: 60px 0;
       }
+      .auth-content {
+        padding: 20px 30px 0 30px;
+        .o-form-content {
+          margin-bottom: 10px;
+        }
+      }
       h2 {
         font-size: 20px;
         font-family: $font-family-montserrat;
@@ -146,6 +152,22 @@ body {
         border: none;
         &:hover {
           background-color: $color-primary-hover;
+        }
+      }
+      .help-links {
+        .footer-link {
+          padding: 20px 0;
+          border-top: 1px solid $color-border;
+          .link {
+            font-size: 14px;
+            font-family: $font-family-base;
+          }
+        }
+        li {
+          text-align: center;
+          &:empty {
+            display: none;
+          }
         }
       }
       .link {
