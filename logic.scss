@@ -79,6 +79,9 @@ $mobile-max-breakpoint: $mobile-breakpoint - 1;
   justify-content: space-between;
   @media (max-width: $mobile-max-breakpoint) {
     flex-direction: column;
+    padding-bottom: 80px;
+    margin: 0;
+    max-width: none;
   }
 }
 
@@ -109,6 +112,9 @@ $mobile-max-breakpoint: $mobile-breakpoint - 1;
   &-height {
     height: 124px;
     width: 100%;
+    @media (max-width: $mobile-max-breakpoint) {
+      height: 225px;
+    }
   }
   .copyright {
     font-size: 14px;
@@ -135,12 +141,12 @@ $mobile-max-breakpoint: $mobile-breakpoint - 1;
       flex-wrap: wrap;
       @media (max-width: $mobile-max-breakpoint) {
         justify-content: flex-start;
-        margin-top: 10px 0 15px 0;
+        margin: 10px 0 15px 0;
       }
       a {
         margin: 0 0 0 8px;
         @media (max-width: $mobile-max-breakpoint) {
-          margin: 0 0 0 20px;
+          margin: 0 20px 0 0;
           &:last-child {
             margin-right: 0;
           }
