@@ -138,6 +138,8 @@ body {
         align-items: center;
         .sub-header {
           margin-bottom: 5px;
+          font-family: $font-family-base;
+          color: $color-text-gray;
         }
       }
       .o-form-button-bar {
@@ -173,7 +175,7 @@ body {
           margin: 36px -30px 0 -30px;
           .link {
             font-size: 14px;
-            font-family: $font-family-base;
+            font-family: $font-family-montserrat;
           }
         }
         li {
@@ -184,7 +186,9 @@ body {
           .next-line-text {
             font-family: $font-family-montserrat;
             color: $color-text-gray;
-            margin-bottom: 7px;
+            margin-bottom: 10px;
+            margin-top: -14px;
+            line-height: 19px;
           }
           &:first-child {
             margin-top: 22px;
