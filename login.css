@@ -7,6 +7,16 @@
 	 justify-content: space-between;
 	 background-color: #fff;
 }
+ @media (min-width: 769px) {
+	 .d-none-desktop {
+		 display: none !important;
+	}
+}
+ @media (max-width: 768px) {
+	 .d-none-mobile {
+		 display: none !important;
+	}
+}
  .client-logo {
 	 background-color: #007bb3;
 	 display: inline-flex;
@@ -15,6 +25,15 @@
 	 height: 100%;
 	 position: relative;
 }
+ @media (max-width: 768px) {
+	 .client-logo {
+		 background-color: #fff;
+		 display: flex;
+		 justify-content: center;
+		 padding: 8px 0;
+		 width: 100%;
+	}
+}
  .client-logo-diagonal {
 	 background-color: #fff;
 	 height: 100%;
@@ -22,6 +41,11 @@
 	 right: -40px;
 	 transform: skewX(-41deg);
 	 width: 80px;
+}
+ @media (max-width: 768px) {
+	 .client-logo-diagonal {
+		 display: none;
+	}
 }
  .client-login-message {
 	 color: #fff;
