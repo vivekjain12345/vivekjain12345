@@ -61,6 +61,9 @@
  @media (max-width: 768px) {
 	 .container {
 		 flex-direction: column;
+		 padding-bottom: 80px;
+		 margin: 0;
+		 max-width: none;
 	}
 }
  .client-footer {
@@ -96,6 +99,11 @@
 	 height: 124px;
 	 width: 100%;
 }
+ @media (max-width: 768px) {
+	 .client-footer-height {
+		 height: 225px;
+	}
+}
  .client-footer .copyright {
 	 font-size: 14px;
 	 font-weight: 400;
@@ -126,7 +134,7 @@
  @media (max-width: 768px) {
 	 .client-footer .download-links {
 		 justify-content: flex-start;
-		 margin-top: 10px 0 15px 0;
+		 margin: 10px 0 15px 0;
 	}
 }
  .client-footer .download-links a {
@@ -134,7 +142,7 @@
 }
  @media (max-width: 768px) {
 	 .client-footer .download-links a {
-		 margin: 0 0 0 20px;
+		 margin: 0 20px 0 0;
 	}
 	 .client-footer .download-links a:last-child {
 		 margin-right: 0;
