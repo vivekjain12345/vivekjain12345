@@ -291,7 +291,7 @@
 	 color: #006098;
 }
  body #okta-sign-in.auth-container .link.help-link-recoverypage {
-	 margin-top: 35px -30px 0 -30px;
+	 margin: 35px -30px 0 -30px;
 	 padding-top: 18px;
 	 border-top: 1px solid #ccc;
 }
