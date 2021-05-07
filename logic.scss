@@ -1,5 +1,4 @@
 
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 $primary-color: #007bb3;
@@ -69,8 +68,11 @@ $mobile-max-breakpoint: $mobile-breakpoint - 1;
 .client-login-message {
   color: $color-white;
   text-shadow: 0px 3px 6px #19191936;
-  margin-top: 300px;
-  max-width: 325px;
+  margin-top: 177px;
+  font-family: $font-family-montserrat;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 39px;
   @media (max-width: $mobile-max-breakpoint) {
     margin: 25px 0;
     max-width: none;
@@ -188,6 +190,7 @@ body {
     @media (max-width: $mobile-max-breakpoint) {
       width: 100%;
     }
+
     &.auth-container {
       border-radius: 10px;
       &.main-container {
@@ -199,6 +202,11 @@ body {
       .okta-sign-in-header {
         display: flex;
         align-items: center;
+        padding: 14px 30px 14px 22px;
+        .auth-org-logo {
+          max-height: none;
+          margin: 0 13px 0 0;
+        }
         @media (max-width: $mobile-max-breakpoint) {
           padding-left: 0 !important;
         }
@@ -255,6 +263,7 @@ body {
           font-family: $font-family-base;
           color: $color-text-gray;
           margin-top: 24px;
+          font-size: 16px;
           .next-line-text {
             font-family: $font-family-montserrat;
             color: $color-text-gray;
@@ -283,6 +292,13 @@ body {
         &:active {
           color: $color-primary-hover;
         }
+        &.help-link-recoverypage{
+          margin: 35px -30px 18px -30px;
+          padding-top: 18px;
+          border-top: 1px solid $color-border;
+          display: block;
+          text-align: center;
+        }
       }
     }
     .o-form label {
@@ -303,6 +319,11 @@ body {
           color: $color-black;
         }
       }
+    }
+    .auth-footer {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
