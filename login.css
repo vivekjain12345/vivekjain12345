@@ -49,7 +49,7 @@
 }
  .client-login-message {
 	 color: #fff;
-	 text-shadow: 0px 3px 6px #191919 36;
+	 text-shadow: 0px 3px 6px #19191936;
 	 margin-top: 177px;
 	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	 font-weight: 600;
@@ -180,6 +180,9 @@
 	 min-height: calc(100vh - 90px - 124px);
 	 position: static;
 }
+ body #okta-sign-in {
+	 width: 430px;
+}
  @media (max-width: 768px) {
 	 body #okta-sign-in {
 		 width: 100%;
@@ -200,10 +203,12 @@
 	 display: flex;
 	 align-items: center;
 	 padding: 14px 30px 14px 22px;
+	 justify-content: center;
+	 border-bottom: 1px solid #ccc;
 }
  body #okta-sign-in.auth-container .okta-sign-in-header .auth-org-logo {
 	 max-height: none;
-	 margin: 0 13px 0 0;
+	 margin: 0 10px 0 0;
 }
  @media (max-width: 768px) {
 	 body #okta-sign-in.auth-container .okta-sign-in-header {
@@ -219,7 +224,7 @@
 	 padding-bottom: 0;
 }
  body #okta-sign-in.auth-container .auth-content {
-	 padding: 20px 30px 0 30px;
+	 padding: 18px 30px 0 30px;
 }
  @media (max-width: 768px) {
 	 body #okta-sign-in.auth-container .auth-content {
@@ -236,7 +241,7 @@
 	 font-size: 20px;
 	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	 color: #2e2840;
-	 font-weight: 400;
+	 font-weight: 500;
 }
  body #okta-sign-in.auth-container .button-primary {
 	 font-size: 18px;
@@ -297,10 +302,17 @@
 	 display: block;
 	 text-align: center;
 }
+ body #okta-sign-in.auth-container .okta-form-label {
+	 padding: 0 0 5px 0;
+}
+ body #okta-sign-in.auth-container .o-form-fieldset {
+	 margin-bottom: 9px !important;
+}
  body #okta-sign-in .o-form label {
 	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	 color: #737375;
 	 font-weight: 400;
+	 font-size: 16px;
 }
  body #okta-sign-in .o-form .custom-checkbox label {
 	 font-size: 14px;
