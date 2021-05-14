@@ -266,6 +266,24 @@
 	 margin: 7px 0 20px 0;
 	 color: #b3134e;
 }
+ body #okta-sign-in.auth-container .link-button {
+	 font-size: 16px;
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 font-weight: 400;
+	 color: #737375;
+	 border: 1px solid #ccc;
+	 height: 45px;
+	 display: flex;
+	 align-items: center;
+	 padding: 0;
+	 justify-content: center;
+	 background-color: #fff;
+}
+ body #okta-sign-in.auth-container .link-button.sms-request-button {
+	 margin-top: 0 !important;
+	 margin-left: 13px;
+	 min-width: 152px;
+}
  body #okta-sign-in.auth-container input[type="submit"].button-primary, body #okta-sign-in.auth-container .button-primary {
 	 font-size: 18px;
 	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -287,24 +305,6 @@
 }
  body #okta-sign-in.auth-container input[type="submit"].button-primary.link-button:last-child, body #okta-sign-in.auth-container .button-primary.link-button:last-child {
 	 margin-bottom: 10px;
-}
- body #okta-sign-in.auth-container .link-button {
-	 font-size: 16px;
-	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	 font-weight: 400;
-	 color: #737375;
-	 border: 1px solid #ccc;
-	 height: 45px;
-	 display: flex;
-	 align-items: center;
-	 padding: 0;
-	 justify-content: center;
-	 background-color: #fff;
-}
- body #okta-sign-in.auth-container .link-button.sms-request-button {
-	 margin-top: 0 !important;
-	 margin-left: 13px;
-	 min-width: 152px;
 }
  body #okta-sign-in.auth-container .help-links .footer-link {
 	 padding: 20px 0;
