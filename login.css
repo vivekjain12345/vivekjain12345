@@ -210,6 +210,9 @@
 		 margin: 0;
 	}
 }
+ body #okta-sign-in.auth-container.main-container .recovery-question .o-form-button-bar {
+	 margin-bottom: 32px;
+}
  body #okta-sign-in.auth-container .okta-sign-in-header {
 	 display: flex;
 	 align-items: center;
@@ -282,6 +285,7 @@
 	 padding: 0;
 	 justify-content: center;
 	 background-color: #fff;
+	 cursor: pointer;
 }
  body #okta-sign-in.auth-container .link-button.sms-request-button {
 	 margin-left: 13px;
@@ -398,7 +402,7 @@
 	 font-size: 16px;
 }
  body #okta-sign-in .o-form .custom-checkbox label {
-	 font-size: 14px;
+	 font-size: 16px;
 }
  body #okta-sign-in .o-form .o-form-input .o-form-control {
 	 height: 45px;
