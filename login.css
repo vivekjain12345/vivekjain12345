@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;
+400;
+500;
+600;
+700&display=swap");
  .client-header {
 	 display: flex;
 	 height: 90px;
@@ -49,7 +53,7 @@
 }
  .client-login-message {
 	 color: #fff;
-	 text-shadow: 0px 3px 6px #19191936;
+	 text-shadow: 0px 3px 6px #191919 36;
 	 margin-top: 177px;
 	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	 font-weight: 600;
@@ -182,6 +186,9 @@
 		 margin-right: 0;
 	}
 }
+ body {
+	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
  body .login-bg-image {
 	 top: 90px;
 	 min-height: calc(100vh - 90px - 124px);
@@ -200,6 +207,7 @@
 }
  body #okta-sign-in.auth-container.main-container {
 	 margin: 60px 0;
+	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
  @media (max-width: 768px) {
 	 body #okta-sign-in.auth-container.main-container {
@@ -280,7 +288,6 @@
 	 background-color: #fff;
 }
  body #okta-sign-in.auth-container .link-button.sms-request-button {
-	 margin-top: 0 !important;
 	 margin-left: 13px;
 	 min-width: 152px;
 }
@@ -302,6 +309,7 @@
 	 display: flex;
 	 align-items: center;
 	 justify-content: center;
+	 color: #fff;
 }
  body #okta-sign-in.auth-container input[type="submit"].button-primary.link-button:last-child, body #okta-sign-in.auth-container .button-primary.link-button:last-child {
 	 margin-bottom: 10px;
@@ -378,8 +386,14 @@
  body #okta-sign-in.auth-container .o-form-fieldset .custom-checkbox {
 	 margin: -7px 0;
 }
+ body #okta-sign-in.auth-container .o-form-fieldset .o-form-input-error .o-form-explain {
+	 word-break: break-word;
+}
  body #okta-sign-in .recovery-challenge .o-form-fieldset-container {
-	 align-items: flex-end;
+	 align-items: flex-start;
+}
+ body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button {
+	 margin-top: 22px !important;
 }
  body #okta-sign-in .o-form label {
 	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
