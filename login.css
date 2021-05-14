@@ -377,6 +377,10 @@
  body #okta-sign-in.auth-container .o-form-fieldset:last-child {
 	 margin-bottom: 0 !important;
 }
+ body #okta-sign-in.auth-container .o-form-fieldset.required-field label::after {
+	 content: '*';
+	 color: #f42b36;
+}
  body #okta-sign-in.auth-container .o-form-fieldset.enroll-sms-phone {
 	 width: auto;
 }
