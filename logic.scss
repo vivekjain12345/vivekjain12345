@@ -11,6 +11,7 @@ $color-text-black: #000;
 $color-black: #333;
 $color-text-gray: #737375;
 $color-secondary: #2e2840;
+$color-primary-v3: #b3134e;
 $font-family-base: Helvetica, "Helvetica Neue", -apple-system,
   BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
@@ -95,6 +96,13 @@ $mobile-max-breakpoint: $mobile-breakpoint - 1;
     line-height: 24px;
     font-weight: 400;
     font-family: $font-family-montserrat;
+    &.okta-form-title {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      margin: 7px 0 20px 0;
+      color: $color-primary-v3;
+    }
   }
 }
 
@@ -181,12 +189,14 @@ $mobile-max-breakpoint: $mobile-breakpoint - 1;
 }
 
 body {
+  font-family: $font-family-base;
   .login-bg-image {
     top: $header-height;
     min-height: calc(100vh - 90px - 124px);
     position: static;
   }
   #okta-sign-in {
+    width: 430px;
     @media (max-width: $mobile-max-breakpoint) {
       width: 100%;
     }
@@ -195,17 +205,26 @@ body {
       border-radius: 10px;
       &.main-container {
         margin: 60px 0;
+        font-family: $font-family-base;
         @media (max-width: $mobile-max-breakpoint) {
           margin: 0;
+        }
+        .recovery-question,
+        .password-reset {
+          .o-form-button-bar {
+            margin-bottom: 32px;
+          }
         }
       }
       .okta-sign-in-header {
         display: flex;
         align-items: center;
         padding: 14px 30px 14px 22px;
+        justify-content: center;
+        border-bottom: 1px solid $color-border;
         .auth-org-logo {
           max-height: none;
-          margin: 0 13px 0 0;
+          margin: 0 10px 0 0;
         }
         @media (max-width: $mobile-max-breakpoint) {
           padding-left: 0 !important;
@@ -220,23 +239,58 @@ body {
         padding-bottom: 0;
       }
       .auth-content {
-        padding: 20px 30px 0 30px;
+        padding: 18px 30px 0 30px;
         @media (max-width: $mobile-max-breakpoint) {
           padding: 20px 15px 0 15px;
         }
         .o-form-content {
           margin-bottom: 10px;
+          padding-bottom: 10px;
         }
         .forgot-password {
           margin-bottom: 20px;
+        }
+        .mobile-recovery-hint {
+          margin: 15px 0 25px 0;
+          top: 0;
+          font-size: 14px;
+          color: $color-text-gray;
+          font-family: $font-family-base;
+          padding-bottom: 0;
         }
       }
       h2 {
         font-size: 20px;
         font-family: $font-family-montserrat;
         color: $color-secondary;
-        font-weight: 400;
+        font-weight: 500;
+        &.okta-form-title {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          margin: 7px 0 20px 0;
+          color: $color-primary-v3;
+        }
       }
+      .link-button {
+        font-size: 16px;
+        font-family: $font-family-montserrat;
+        font-weight: 400;
+        color: $color-text-gray;
+        border: 1px solid $color-border;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+        background-color: $color-white;
+        cursor: pointer;
+        &.sms-request-button {
+          margin-left: 13px;
+          min-width: 152px;
+        }
+      }
+      input[type="submit"].button-primary,
       .button-primary {
         font-size: 18px;
         font-family: $font-family-montserrat;
@@ -244,10 +298,23 @@ body {
         background-image: none;
         background-color: $primary-color;
         border: none;
+        max-height: 45px;
         &:hover {
           background-color: $color-primary-hover;
+          background-image: none;
+        }
+        &.link-button {
+          margin-bottom: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $color-white;
+          &:last-child {
+            margin-bottom: 10px;
+          }
         }
       }
+
       .help-links {
         .footer-link {
           padding: 20px 0;
@@ -272,7 +339,7 @@ body {
             line-height: 19px;
           }
           &:first-child {
-            margin-top: 22px;
+            margin-top: 18px;
           }
           &:empty {
             display: none;
@@ -292,23 +359,85 @@ body {
         &:active {
           color: $color-primary-hover;
         }
-        &.help-link-recoverypage{
-          margin: 35px -30px 18px -30px;
-          padding-top: 18px;
+        &.help-link-recoverypage {
+          margin: 20px -30px 20px -30px;
+          padding-top: 20px;
           border-top: 1px solid $color-border;
           display: block;
           text-align: center;
         }
+        &.js-back,
+        &[data-se="signout-link"] {
+          margin-bottom: 16px;
+        }
+        &.send-email-link {
+          margin-top: 20px;
+        }
+      }
+      .okta-form-label {
+        padding: 0 0 5px 0;
+      }
+      .o-form-fieldset {
+        margin-bottom: 9px !important;
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+        &.required-field {
+          label::after {
+            content: '*';
+            color: #f42b36;
+          }
+        }
+        &.enroll-sms-phone {
+          width: auto;
+        }
+        .o-form-explain:empty {
+          display: none;
+        }
+        .custom-checkbox {
+          margin: -7px 0;
+        }
+        .o-form-input-error .o-form-explain {
+          word-break: break-word;
+        }
+      }
+    }
+
+    .password-requirements--header {
+      color: $color-secondary;
+      font-size: 16px;
+      margin-top: 32px;
+    }
+
+    .password-requirements--list {
+      padding-bottom: 16px;
+      &-item {
+        font-size: 14px;
+        color: #707070;
+        line-height: 16px;
+        margin-bottom: 8px;
+        &::marker {
+          color: $color-primary-v3;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .recovery-challenge .o-form-fieldset-container {
+      align-items: flex-start;
+      .button {
+        margin-top: 22px !important;
       }
     }
     .o-form label {
       font-family: $font-family-base;
       color: $color-text-gray;
       font-weight: 400;
+      font-size: 16px;
     }
     .o-form {
       .custom-checkbox label {
-        font-size: 14px;
+        font-size: 16px;
       }
       .o-form-input .o-form-control {
         height: $input-height;
