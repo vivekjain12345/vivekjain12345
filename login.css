@@ -210,7 +210,7 @@
 		 margin: 0;
 	}
 }
- body #okta-sign-in.auth-container.main-container .recovery-question .o-form-button-bar {
+ body #okta-sign-in.auth-container.main-container .recovery-question .o-form-button-bar, body #okta-sign-in.auth-container.main-container .password-reset .o-form-button-bar {
 	 margin-bottom: 32px;
 }
  body #okta-sign-in.auth-container .okta-sign-in-header {
@@ -388,6 +388,24 @@
 }
  body #okta-sign-in.auth-container .o-form-fieldset .o-form-input-error .o-form-explain {
 	 word-break: break-word;
+}
+ body #okta-sign-in .password-requirements--header {
+	 color: #2e2840;
+	 font-size: 16px;
+	 margin-top: 32px;
+}
+ body #okta-sign-in .password-requirements--list {
+	 padding-bottom: 16px;
+}
+ body #okta-sign-in .password-requirements--list-item {
+	 font-size: 14px;
+	 color: #707070;
+	 line-height: 16px;
+	 margin-bottom: 8px;
+}
+ body #okta-sign-in .password-requirements--list-item::marker {
+	 color: #b3134e;
+	 font-size: 18px;
 }
  body #okta-sign-in .recovery-challenge .o-form-fieldset-container {
 	 align-items: flex-start;
